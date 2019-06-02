@@ -1,3 +1,3 @@
-document.querySelector(".select").addEventListener("click", function(evt) {
-  document.querySelector(".select").classList.toggle("js");
-});
+// document.querySelector(".select").addEventListener("click", function(evt) {
+//   document.querySelector(".select").classList.toggle("js");
+// });
