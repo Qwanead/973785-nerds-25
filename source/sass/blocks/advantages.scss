@@ -1,0 +1,32 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__wrapper {
+  flex-basis: 660px;
+}
+
+.advantages__header {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.advantages__order-header {
+  text-transform: uppercase;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.advantages__orders-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

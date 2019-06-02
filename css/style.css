@@ -350,6 +350,34 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
 
+.page-header {
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: 500;
+  line-height: 30px; }
+
+.page-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto; }
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .slider {
   position: relative;
   background-color: #eeeeee; }
@@ -455,10 +483,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 38px; }
 
 .button {
-  display: block;
-  width: 240px;
+  display: inline-block;
+  width: 200px;
   padding: 13px 0;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -466,6 +495,7 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
   background-color: #fb565a;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px; }
 
 .button:hover,
@@ -477,6 +507,302 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset; }
+
+.button--products {
+  width: 160px; }
+
+.button--apps {
+  background-color: #00ca74; }
+
+.button--presentation {
+  background-color: #efc84a; }
+
+.button--contacts {
+  width: 219px; }
+
+.button--form {
+  width: 260px; }
+
+.products {
+  width: 1200px;
+  margin: 0 auto; }
+
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.products__item {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px; }
+
+.products__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto; }
+
+.advantages__wrapper {
+  -ms-flex-preferred-size: 660px;
+      flex-basis: 660px; }
+
+.advantages__header {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px; }
+
+.advantages__order-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.advantages__orders-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.stats {
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
+  text-align: center; }
+
+.stats__header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.stats__table {
+  text-align: left;
+  border-collapse: collapse; }
+
+.stats__percent {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px; }
+
+.stats__value {
+  line-height: 18px; }
+
+.clients {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.page-footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  min-height: 217px;
+  margin: 0 auto; }
+
+.page-footer__sale-header {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px; }
+
+.page-footer__sale-content {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; }
+
+.contacts {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto; }
+
+.contacts::before {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 231px;
+  height: 190px;
+  content: "";
+  background-image: url("../img/map-marker.png"); }
+
+.contacts__header {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.contacts__block {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  width: 319px;
+  height: 308px;
+  padding: 50px;
+  background-color: #ffffff; }
+
+.contacts__address,
+.contacts__tel {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px; }
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social__link {
+  display: block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 15px;
+  font-size: 0; }
+
+.social__link--facebook {
+  background-image: url("../img/fb-icon.svg");
+  background-size: 12px 22px; }
+
+.social__link--instagram {
+  background-image: url("../img/insta-icon.svg");
+  background-size: 21px 21px; }
+
+.modal {
+  width: 960px;
+  height: 590px;
+  margin: 0 auto;
+  padding: 75px 100px 85px 100px;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+          box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75); }
+
+.modal__header {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px; }
+
+.modal__label {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px; }
+
+.modal__text {
+  width: 360px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  background-color: #ffffff; }
+
+.modal__textarea {
+  width: 760px;
+  height: 118px;
+  resize: none;
+  border: 2px solid #d7dcde;
+  background-color: #ffffff; }
+
+.modal__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.modal__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.modal__text::-webkit-input-placeholder,
+.modal__textarea::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; }
+
+.modal__text::-moz-placeholder,
+.modal__textarea::-moz-placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; }
+
+.modal__text:-ms-input-placeholder,
+.modal__textarea:-ms-input-placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; }
+
+.modal__text::-ms-input-placeholder,
+.modal__textarea::-ms-input-placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; }
+
+.modal__text::placeholder,
+.modal__textarea::placeholder {
+  opacity: 0.5;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; }
 
 .catalog-form__fieldset {
   width: 260px;

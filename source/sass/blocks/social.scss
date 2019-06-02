@@ -1,0 +1,34 @@
+.social__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+
+  width: 79px;
+  height: 79px;
+
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 15px;
+
+  font-size: 0;
+}
+
+.social__link--facebook {
+  background-image: url("../img/fb-icon.svg");
+  background-size: 12px 22px;
+}
+
+.social__link--instagram {
+  background-image: url("../img/insta-icon.svg");
+  background-size: 21px 21px;
+}

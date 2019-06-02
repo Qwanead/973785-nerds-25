@@ -1,0 +1,18 @@
+.page-header {
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #eeeeee;
+
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 1200px;
+  margin: 0 auto;
+}

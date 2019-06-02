@@ -1,0 +1,29 @@
+.stats {
+  flex-basis: 360px;
+
+  text-align: center;
+}
+
+.stats__header {
+  text-transform: uppercase;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.stats__table {
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+.stats__percent {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.stats__value {
+  line-height: 18px;
+}

@@ -1,0 +1,15 @@
+.clients {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
