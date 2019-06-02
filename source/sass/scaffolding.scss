@@ -1,0 +1,29 @@
+body {
+  color: #283136;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
