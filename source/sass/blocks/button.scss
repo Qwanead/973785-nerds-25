@@ -2,10 +2,10 @@
   display: inline-block;
 
   width: 200px;
-  padding: 13px 0;
+  padding: 16px 0;
 
   text-align: center;
-  vertical-align: middle;
+  // vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -28,6 +28,10 @@
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.button--slider {
+  width: 240px;
 }
 
 .button--products {

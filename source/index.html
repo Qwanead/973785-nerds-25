@@ -12,7 +12,7 @@
         <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160px" height="65px">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a href="#">Студия</a></li>
+            <li class="main-nav__item"><a href="#">Студия</a></li>
             <li class="main-nav__item"><a href="#">Клиенты</a></li>
             <li class="main-nav__item"><a href="./catalog.html">Магазин</a></li>
             <li class="main-nav__item"><a href="#">Контакты</a></li>
@@ -41,7 +41,7 @@
             <li class="slider__item">
               <h3 class="slider__header">Долго, дорого,
                 скрупулезно.</h3>
-              <p class="slider__discription">Математически выверенный дизайн
+              <p class="slider__discription">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
               <a href="#" class="button button--slider">Узнать больше</a>
             </li>
@@ -65,82 +65,92 @@
         </div>
       </section>
 
-      <section class="products">
-        <h2 class="visually-hidden">Продукты</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <img src="./img/illustration-1.png" alt="Веб-сайты">
-            <h3 class="products__title">Веб-сайты</h3>
-            <p class="products__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="" class="button button--products">Заказать</a>
-          </li>
+      <div class="layout-positioner">
+        <section class="products">
+          <h2 class="visually-hidden">Продукты</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <img src="./img/illustration-1.png" alt="Веб-сайты">
+              <h3 class="products__title">Веб-сайты</h3>
+              <p class="products__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a href="" class="button button--products">Заказать</a>
+            </li>
 
-          <li class="products__item">
-            <img src="./img/illustration-2.png" alt="Приложения">
-            <h3 class="products__title">Приложения</h3>
-            <p class="products__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="" class="button button--products button--apps">Заказать</a>
-          </li>
+            <li class="products__item">
+              <img src="./img/illustration-2.png" alt="Приложения">
+              <h3 class="products__title">Приложения</h3>
+              <p class="products__description">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="" class="button button--products button--apps">Заказать</a>
+            </li>
 
-          <li class="products__item">
-            <img src="./img/illustration-3.png" alt="Презентации">
-            <h3 class="products__title">Презентации</h3>
-            <p class="products__description">Вы даже не подозреваете,
-                насколько вы изумительны!</p>
-            <a href="" class="button button--products button--presentation">Заказать</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__header">Мы — маленькая, но гордая
-              дизайн-студия из Краснодара. </h2>
-          <p class="advantages__discription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-              превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3 class="advantages__order-header">Выполняем заказы на разработку:</h3>
-          <ul class="advantages__orders-list">
-            <li class="advantages-orders-item">Веб-сайтов любой сложности</li>
-            <li class="advantages-orders-item">Мобильных приложений для iOS и Android</li>
-            <li class="advantages-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="products__item">
+              <img src="./img/illustration-3.png" alt="Презентации">
+              <h3 class="products__title">Презентации</h3>
+              <p class="products__description">Вы даже не подозреваете,
+                  насколько вы изумительны!</p>
+              <a href="" class="button button--products button--presentation">Заказать</a>
+            </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="stats">
-          <img class="stats__image" src="./img/nerds-illustration.png" alt="NЁRDS" width="360px" height="208px">
-          <h3 class="stats__header">с 2004 года Любим точность во всем:</h3>
-          <table class="stats__table">
-            <tr>
-              <td class="stats__percent">146<sup>%</sup></td>
-              <td class="stats__percent">100<sup>%</sup></td>
-              <td class="stats__percent">50<sup>%</sup></td>
-            </tr>
-            <tr>
-                <td class="stats__value">Уровень самоотдачи</td>
-                <td class="stats__value">Соблюдение сроков</td>
-                <td class="stats__value">Минимальная предоплата</td>
+        <section class="advantages">
+          <div class="advantages__wrapper">
+            <h2 class="advantages__header">Мы — маленькая, но гордая
+                дизайн-студия из Краснодара. </h2>
+            <p class="advantages__discription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="advantages__order-header">Выполняем заказы на разработку:</h3>
+            <ul class="advantages__orders-list">
+              <li class="advantages-orders-item">Веб-сайтов любой сложности</li>
+              <li class="advantages-orders-item">Мобильных приложений для iOS и Android</li>
+              <li class="advantages-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+
+          <div class="stats">
+            <img class="stats__image" src="./img/nerds-illustration.png" alt="NЁRDS" width="360px" height="208px">
+            <h3 class="stats__header">с 2004 года Любим точность во всем:</h3>
+            <table class="stats__table">
+              <tr>
+                <td class="stats__percent">146<sup>%</sup></td>
+                <td class="stats__percent">100<sup>%</sup></td>
+                <td class="stats__percent">50<sup>%</sup></td>
               </tr>
-          </table>
-        </div>
-      </section>
+              <tr>
+                  <td class="stats__value">Уровень самоотдачи</td>
+                  <td class="stats__value">Соблюдение сроков</td>
+                  <td class="stats__value">Минимальная предоплата</td>
+                </tr>
+            </table>
+          </div>
+        </section>
 
-      <section class="clients">
-        <h2 class="visually-hidden">Клиенты</h2>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-1.png" alt="html academy" width="199px" height="68px"></a>
-          </li>
-          <li class="clients__item">
-            <a href="#"><img src="./img/logo-2.png" alt="Borodinski" width="209px" height="90"></a>
-          </li>
-          <li class="clients__item">
-            <a href="#"><img src="./img/logo-3.png" alt="Pink" width="185px" height="52px"></a>
-          </li>
-          <li class="clients__item">
-            <a href="#"><img src="./img/logo-4.png" alt="Mishka" width="173px" height="84px"></a>
-          </li>
-        </ul>
-      </section>
+        <section class="clients">
+          <h2 class="visually-hidden">Клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a class="clients__link" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="./img/logo-1.png" alt="html academy" width="199px" height="68px">
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="#">
+                <img src="./img/logo-2.png" alt="Borodinski" width="209px" height="87px">
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="#">
+                <img src="./img/logo-3.png" alt="Pink" width="185px" height="52px">
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="#">
+                <img src="./img/logo-4.png" alt="Mishka" width="173px" height="84px">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -173,15 +183,16 @@
           </ul>
         </div>
 
-        <div class="page-footer__sale">
-          <h3 class="page-footer__sale-header">Давайте дружить, это выгодно!</h3>
-          <p class="page-footer__sale-content">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="page-footer__discount">
+          <h3 class="page-footer__discount-header">Давайте дружить, это выгодно!</h3>
+          <p class="page-footer__discount-content">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>
 
     <div class="modal">
       <h2 class="modal__header">Напишите нам</h2>
+      <button class="modal__close">Закрыть</button>
       <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
         <div class="modal__input-wrapper">
           <div class="modal__text-wrapper">
@@ -195,7 +206,7 @@
           </div>
         </div>
 
-        <div class="modal__text-wrapper">
+        <div class="modal__text-wrapper modal__letter">
           <label class="modal__label" for="textarea-id">Текст письма:</label>
           <textarea class="modal__textarea" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
         </div>

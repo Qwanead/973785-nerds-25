@@ -2,13 +2,14 @@
   position: relative;
 
   width: 1440px;
+  height: 416px;
   margin: 0 auto;
 }
 
 .contacts::before {
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 21%;
+  left: 57%;
 
   width: 231px;
   height: 190px;
@@ -19,6 +20,9 @@
 }
 
 .contacts__header {
+  margin-top: 0;
+  margin-bottom: 24px;
+
   text-transform: uppercase;
 
   color: #000000;
@@ -48,4 +52,8 @@
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
+}
+
+.contacts__tel {
+  margin-bottom: 37px;
 }

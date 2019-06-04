@@ -1,10 +1,14 @@
 .clients {
-  width: 1200px;
-  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding-bottom: 37px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .clients__list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -12,4 +16,42 @@
   padding: 0;
 
   list-style: none;
+}
+
+.clients__item {
+  position: relative;
+
+  width: 260px;
+
+  opacity: 0.2;
+}
+
+.clients__item:last-child {
+  margin-right: 0;
+}
+
+.clients__item::after {
+  position: absolute;
+  top: 50%;
+  right: -21px;
+
+  width: 2px;
+  height: 52px;
+  margin-top: -29px;
+
+  content: "";
+
+  background-color: #eeeeee;
+}
+
+.clients__item:last-child::after {
+  background-color: transparent;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 103px;
 }

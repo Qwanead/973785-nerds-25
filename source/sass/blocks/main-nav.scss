@@ -1,8 +1,23 @@
+.main-nav {
+  margin-top: 26px;
+}
+
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
 
+  min-width: 481px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 46px;
+  padding-bottom: 3px;
+}
+
+.main-nav__item--current {
+  border-bottom: 2px solid #fb565a;;
 }
