@@ -1,9 +1,18 @@
 .modal {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+
   width: 960px;
   height: 590px;
-  margin: 0 auto;
+  margin-top: -295px;
+  margin-left: -480px;
   padding: 75px 100px 85px 100px;
 
+  background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 

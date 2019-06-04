@@ -1,0 +1,14 @@
+.main-catalog__wrapper {
+  display: flex;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-catalog__sort-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 140px;
+}

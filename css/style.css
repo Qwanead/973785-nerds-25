@@ -378,6 +378,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none; }
 
+.page-main__header {
+  width: 1200px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px; }
+
 .slider {
   position: relative;
   background-color: #eeeeee; }
@@ -521,7 +529,9 @@ input[type="radio"].visually-hidden {
   width: 219px; }
 
 .button--form {
-  width: 260px; }
+  width: 260px;
+  color: #000000;
+  background-color: #eeeeee; }
 
 .products {
   width: 1200px;
@@ -715,10 +725,17 @@ input[type="radio"].visually-hidden {
   background-size: 21px 21px; }
 
 .modal {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  display: none;
   width: 960px;
   height: 590px;
-  margin: 0 auto;
+  margin-top: -295px;
+  margin-left: -480px;
   padding: 75px 100px 85px 100px;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
           box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75); }
 
@@ -812,6 +829,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-form__legend {
   text-transform: uppercase;
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px; }
@@ -884,3 +902,160 @@ input[type="radio"].visually-hidden {
 
 .range-filter__label--max-price {
   text-align: right; }
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  position: relative;
+  height: 616px;
+  margin-bottom: 33px; }
+
+.catalog__item:hover > .catalog__cap {
+  opacity: 1; }
+
+.catalog__item:hover > .catalog__card {
+  display: block; }
+
+.catalog__item:nth-child(odd) {
+  margin-right: 40px; }
+
+.catalog__cap {
+  width: 360px;
+  height: 40px;
+  opacity: 0.12;
+  background-image: url("../img/browser.svg"); }
+
+.catalog__image {
+  outline: 1px solid rgba(0, 1, 1, 0.1);
+  outline-offset: -1px; }
+
+.catalog__card {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 360px;
+  height: 231px;
+  max-height: 576px;
+  padding: 35px 50px 43px 50px;
+  text-align: center;
+  background-color: #eeeeee; }
+
+.catalog__header {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.catalog__description {
+  line-height: 18px; }
+
+.main-catalog__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main-catalog__sort-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 140px; }
+
+.catalog-form__legend {
+  line-height: 22px; }
+
+.input__label {
+  line-height: 20px; }
+
+.input__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.catalog-sort__header {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px; }
+
+.catalog-sort__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none; }
+
+.catalog-sort__item {
+  text-transform: uppercase;
+  opacity: 0.3;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px; }
+
+.catalog-sort__item--current {
+  opacity: 1; }
+
+.catalog-sort__arrow {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background-color: #000000;
+  font-size: 0; }
+
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.paginator__item {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  padding-top: 19px;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: 500;
+  line-height: 18px; }
+
+.paginator__item--current {
+  outline: 3px solid #dbdbdb;
+  outline-offset: -3px;
+  background-color: #ffffff; }
+
+.paginator__item--next {
+  min-width: 260px; }

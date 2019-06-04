@@ -1,0 +1,52 @@
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-sort__header {
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.catalog-sort__list {
+  display: flex;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-sort__item {
+  text-transform: uppercase;
+
+  opacity: 0.3;
+  color: #000000;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-sort__item--current {
+  opacity: 1;
+}
+
+.catalog-sort__arrow {
+  display: inline-block;
+
+  width: 11px;
+  height: 10px;
+
+  background-color: #000000;
+
+  font-size: 0;
+}
