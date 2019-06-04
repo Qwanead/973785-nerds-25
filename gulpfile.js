@@ -27,26 +27,26 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(csso())
     .pipe(rename({suffix: ".min"}))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("html", function () {
   return gulp.src("./source/*.html")
-    .pipe(gulp.dest("./"));
+    .pipe(gulp.dest("./build/"));
   });
 
 gulp.task("js", function () {
   return pipeline(
     gulp.src("source/js/*.js"),
-    gulp.dest("./js/"),
+    gulp.dest("./build/js/"),
     uglify(),
     rename({suffix: ".min"}),
-    gulp.dest("./js")
+    gulp.dest("./build/js")
   );
 });
 
@@ -60,7 +60,7 @@ gulp.task("copy", function () {
   ], {
     base: "source/"
   })
-    .pipe(gulp.dest("./"));
+    .pipe(gulp.dest("./build"));
 });
 
 gulp.task("clean", function () {
@@ -74,12 +74,12 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("./img"));
+  .pipe(gulp.dest("./build/img"));
 });
 
 gulp.task('server', function() {
   server.init({
-    server: "./",
+    server: "./build/",
     notify: false,
     open: true,
     cors: true,
