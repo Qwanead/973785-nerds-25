@@ -1,0 +1,135 @@
+.slider {
+  position: relative;
+
+  background-color: #eeeeee;
+}
+
+.slider__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider__controls {
+  position: absolute;
+  z-index: 100;
+  bottom: 104px;
+  left: 50%;
+
+  box-sizing: content-box;
+  width: 160px;
+  height: 18px;
+
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-size: 0;
+}
+
+.slider__controls label {
+  position: relative;
+
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+}
+
+.slider__controls label::after {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 8px;
+
+  width: 18px;
+  height: 18px;
+
+  content: "";
+
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+
+  height: 431px;
+  padding: 78px 0 80px 0;
+}
+
+.slider__item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider__item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider__item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slider__list .slider__item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider__controls .slider__controls-item--1::before,
+#product-2:checked ~ .slider__controls .slider__controls-item--2::before,
+#product-3:checked ~ .slider__controls .slider__controls-item--3::before {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  content: "";
+
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.slider__item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.slider__item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
