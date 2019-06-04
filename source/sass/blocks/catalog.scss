@@ -1,3 +1,7 @@
+.catalog {
+  margin-top: 52px;
+}
+
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +55,7 @@
   width: 360px;
   height: 231px;
   max-height: 576px;
-  padding: 35px 50px 43px 50px;
+  padding: 8px 50px 43px 50px;
 
   text-align: center;
 
@@ -59,6 +63,8 @@
 }
 
 .catalog__header {
+  margin-bottom: 14px;
+
   text-transform: uppercase;
 
   color: #000000;
@@ -69,5 +75,7 @@
 }
 
 .catalog__description {
+  margin-bottom: 29px;
+
   line-height: 18px;
 }

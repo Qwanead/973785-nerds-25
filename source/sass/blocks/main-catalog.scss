@@ -3,6 +3,7 @@
 
   width: 1200px;
   margin: 0 auto;
+  margin-top: 58px;
   padding: 0 20px;
 }
 
@@ -11,4 +12,8 @@
   flex-direction: column;
 
   margin-left: 140px;
+}
+
+.main-catalog__header-wrapper {
+  padding: 79px 0 107px;
 }

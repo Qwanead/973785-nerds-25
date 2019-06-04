@@ -20,6 +20,7 @@
   display: flex;
 
   margin: 0;
+  margin-right: 24px;
   margin-left: auto;
   padding: 0;
 
@@ -27,6 +28,8 @@
 }
 
 .catalog-sort__item {
+  margin-right: 25px;
+
   text-transform: uppercase;
 
   opacity: 0.3;
@@ -46,7 +49,14 @@
   width: 11px;
   height: 10px;
 
-  background-color: #000000;
+  background-image: url("../img/icon-down-dir.svg");
 
   font-size: 0;
+}
+
+.catalog-sort__arrow--up {
+  margin-left: 15px;
+
+  opacity: 0.2;
+  background-image: url("../img/icon-up-dir.svg");
 }
