@@ -1077,8 +1077,7 @@ input[type="radio"].visually-hidden {
   text-align: right; }
 
 .catalog {
-  width: 760px;
-  margin-top: 52px; }
+  margin-top: 47px; }
 
 .catalog__list {
   display: -webkit-box;
@@ -1214,11 +1213,17 @@ input[type="radio"].visually-hidden {
 .catalog-sort__item--current {
   opacity: 1; }
 
+.catalog-sort__arrows {
+  padding-top: 5px; }
+
 .catalog-sort__arrow {
   display: inline-block;
   width: 11px;
   height: 10px;
+  vertical-align: top;
   background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 0; }
 
 .catalog-sort__arrow--up {
