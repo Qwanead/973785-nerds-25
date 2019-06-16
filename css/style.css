@@ -1077,6 +1077,7 @@ input[type="radio"].visually-hidden {
   text-align: right; }
 
 .catalog {
+  width: 760px;
   margin-top: 47px; }
 
 .catalog__list {
