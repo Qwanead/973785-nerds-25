@@ -43,13 +43,21 @@
   opacity: 1;
 }
 
+.catalog-sort__arrows {
+  padding-top: 5px;
+}
+
 .catalog-sort__arrow {
   display: inline-block;
 
   width: 11px;
   height: 10px;
 
+  vertical-align: top;
+
   background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   font-size: 0;
 }
