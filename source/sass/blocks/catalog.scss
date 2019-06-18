@@ -54,7 +54,7 @@
   display: none;
 
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   max-height: 576px;
   padding: 8px 50px 43px 50px;
 
@@ -76,6 +76,9 @@
 }
 
 .catalog__description {
+  overflow: auto;
+
+  max-height: 400px;
   margin-bottom: 29px;
 
   line-height: 18px;

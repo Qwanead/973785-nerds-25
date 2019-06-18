@@ -12,12 +12,15 @@
 
 .page-header__wrapper {
   display: flex;
-  // align-items: flex-end;
   justify-content: space-between;
 
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.page-header__logo {
+  align-self: flex-start;
 }
 
 .page-header__cart {
