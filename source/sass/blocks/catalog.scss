@@ -28,14 +28,20 @@
   outline: none;
 }
 
-.catalog__item:hover > .catalog__cap,
-.catalog__item:focus-within > .catalog__cap {
+.catalog__item:hover > .catalog__cap {
   opacity: 1;
 }
 
-.catalog__item:hover > .catalog__card,
+.catalog__item:hover > .catalog__card {
+  display: block;
+}
+
 .catalog__item:focus-within > .catalog__card {
   display: block;
+}
+
+.catalog__item:focus-within > .catalog__cap {
+  opacity: 1;
 }
 
 .catalog__item:nth-child(odd) {
