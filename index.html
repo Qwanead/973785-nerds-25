@@ -9,15 +9,15 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160px" height="65px">
+        <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Студия</a></li>
-            <li class="main-nav__item"><a href="#">Клиенты</a></li>
-            <li class="main-nav__item"><a href="./catalog.html">Магазин</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="./catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
-        </nav class="main-nav">
+        </nav>
         <a class="page-header__cart" href="">Корзина</a>
       </div>
     </header>
@@ -28,9 +28,9 @@
       <section class="slider">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="slider__wrapper">
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
           <div class="slider__controls">
             <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
             <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
@@ -108,7 +108,7 @@
           </div>
 
           <div class="stats">
-            <img class="stats__image" src="./img/nerds-illustration.png" alt="NЁRDS" width="360px" height="208px">
+            <img class="stats__image" src="./img/nerds-illustration.png" alt="NЁRDS" width="360" height="208">
             <h3 class="stats__header">с 2004 года Любим точность во всем:</h3>
             <table class="stats__table">
               <tr>
@@ -130,22 +130,22 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="./img/logo-1.png" alt="html academy" width="199px" height="68px">
+                <img src="./img/logo-1.png" alt="html academy" width="199" height="68">
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
-                <img src="./img/logo-2.png" alt="Borodinski" width="209px" height="87px">
+                <img src="./img/logo-2.png" alt="Borodinski" width="209" height="87">
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
-                <img src="./img/logo-3.png" alt="Pink" width="185px" height="52px">
+                <img src="./img/logo-3.png" alt="Pink" width="185" height="52">
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
-                <img src="./img/logo-4.png" alt="Mishka" width="173px" height="84px">
+                <img src="./img/logo-4.png" alt="Mishka" width="173" height="84">
               </a>
             </li>
           </ul>
@@ -164,7 +164,9 @@
           <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
           <a href="#" class="button button--contacts">Напишите нам</a>
         </div>
-        <img class="contacts__map" src="./img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440px" height="416px">
+        <div class="contacts__map">
+          <iframe class="contacts__map-google contacts__map-google--no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3026917786391!2d30.322158658404696!3d59.938689995469055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjMiTiAzMMKwMTknMjMuNyJF!5e0!3m2!1sru!2sru!4v1562015705864!5m2!1sru!2sru" width="1200" height="416" allowfullscreen></iframe>
+        </div>
       </section>
 
       <section class="page-footer__bottom">
@@ -172,13 +174,19 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img class="social__icon" src="../img/vk-icon.svg" alt="Мы в Вконтакте" width="26" height="15">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <img class="social__icon social__icon--fb" src="../img/fb-icon.svg" alt="Мы в Фейсбуке" width="12" height="22">
+              </a>
             </li>
             <li class="social__item">
-               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <img class="social__icon social__icon--insta" src="../img/insta-icon.svg" alt="Мы в Инстаграме" width="21" height="21">
+              </a>
             </li>
           </ul>
         </div>
@@ -197,23 +205,23 @@
         <div class="modal__input-wrapper">
           <div class="modal__text-wrapper">
             <label class="modal__label" for="name-id">Ваше имя:</label>
-            <input class="modal__text" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
+            <input class="modal__input modal__text" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
           </div>
 
           <div class="modal__text-wrapper">
             <label class="modal__label" for="email-id">Ваш e-mail:</label>
-            <input class="modal__text" type="email" name="email" id="email-id" placeholder="email@example.com">
+            <input class="modal__input modal__text" type="email" name="email" id="email-id" placeholder="email@example.com">
           </div>
         </div>
 
         <div class="modal__text-wrapper modal__letter">
           <label class="modal__label" for="textarea-id">Текст письма:</label>
-          <textarea class="modal__textarea" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
+          <textarea class="modal__input modal__textarea" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button button--form" type="submit">Отправить</button>
       </form>
     </div>
 
-    <script src="js/app.min.js"></script>
+    <script src="./js/app.min.js"></script>
   </body>
 </html>
