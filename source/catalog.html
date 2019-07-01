@@ -8,18 +8,18 @@
   </head>
   <body>
     <header class="page-header">
-          <div class="page-header__wrapper">
-            <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160px" height="65px">
-            <nav class="main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="./index.html">Студия</a></li>
-                <li class="main-nav__item"><a href="#">Клиенты</a></li>
-                <li class="main-nav__item main-nav__item--current"><a href="./catalog.html">Магазин</a></li>
-                <li class="main-nav__item"><a href="#">Контакты</a></li>
-              </ul>
-            </nav class="main-nav">
-            <a class="page-header__cart" href="">Корзина</a>
-          </div>
+      <div class="page-header__wrapper">
+        <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160px" height="65px">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="./catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav class="main-nav">
+        <a class="page-header__cart" href="">Корзина</a>
+      </div>
     </header>
 
     <main class="page-main main-catalog">
@@ -106,64 +106,64 @@
               <li class="catalog-sort__item"><a href="#">По названию</a></li>
             </ul>
             <div class="catalog-sort__arrows">
-                <a class="catalog-sort__arrow catalog-sort__arrow--down" href="#" aria-label="Сортировать по убыванию">Сортировать по убыванию</a>
-                <a class="catalog-sort__arrow catalog-sort__arrow--up" href="#" aria-label="Сортировать по возрастанию">Сортировать по возрастанию</a>
+              <a class="catalog-sort__arrow catalog-sort__arrow--down" href="#" aria-label="Сортировать по убыванию">Сортировать по убыванию</a>
+              <a class="catalog-sort__arrow catalog-sort__arrow--up" href="#" aria-label="Сортировать по возрастанию">Сортировать по возрастанию</a>
             </div>
           </section>
 
           <section class="catalog">
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog__list">
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара Sedona">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-sedona.jpg" alt="Седона" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">Sedona</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">Sedona</a></h3>
                   <p class="catalog__description">Информационный сайт<br> для туристов</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара Pink App">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-pink.jpg" alt="Пинк" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">Pink App</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">Pink App</a></h3>
                   <p class="catalog__description">Продуктовый лендинг приложения для iOS и Android</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара Barbershop">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-barbershop.jpg" alt="Барбершоп" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">Barbershop</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">Barbershop</a></h3>
                   <p class="catalog__description">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара MISHKA">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-mishka.jpg" alt="Мишка" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">MISHKA</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">MISHKA</a></h3>
                   <p class="catalog__description">Интернет-магазин вязаных игрушек</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара КВАСТ">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-aplus.jpg" alt="А-плюс" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">КВАСТ</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">КВАСТ</a></h3>
                   <p class="catalog__description">Промо-сайт производителя крафтового кваса</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0" aria-label="Карточка товара A Plus">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-kvast.jpg" alt="Кваст" width="360px" height="576px">
                 <div class="catalog__card">
-                  <h3 class="catalog__header"><a href="#">A Plus</a></h3>
+                  <h3 class="catalog__header"><a class="catalog__link" href="#">A Plus</a></h3>
                   <p class="catalog__description">Лендинг курсов повышения квалификации</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
@@ -208,13 +208,19 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img class="social__icon" src="../img/vk-icon.svg" alt="Мы в Вконтакте" width="26px" height="15px">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <img class="social__icon social__icon--fb" src="../img/fb-icon.svg" alt="Мы в Фейсбуке" width="12px" height="22px">
+              </a>
             </li>
             <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <img class="social__icon social__icon--insta" src="../img/insta-icon.svg" alt="Мы в Инстаграме" width="21px" height="21px">
+              </a>
             </li>
           </ul>
         </div>
@@ -227,27 +233,27 @@
     </footer>
 
     <div class="modal">
-        <h2 class="modal__header">Напишите нам</h2>
-        <button class="modal__close">Закрыть</button>
-        <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="modal__input-wrapper">
-            <div class="modal__text-wrapper">
-              <label class="modal__label" for="name-id">Ваше имя:</label>
-              <input class="modal__text" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
-            </div>
-
-            <div class="modal__text-wrapper">
-              <label class="modal__label" for="email-id">Ваш e-mail:</label>
-              <input class="modal__text" type="email" name="email" id="email-id" placeholder="email@example.com">
-            </div>
+      <h2 class="modal__header">Напишите нам</h2>
+      <button class="modal__close">Закрыть</button>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="modal__input-wrapper">
+          <div class="modal__text-wrapper">
+            <label class="modal__label" for="name-id">Ваше имя:</label>
+            <input class="modal__text" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
           </div>
 
-          <div class="modal__text-wrapper modal__letter">
-            <label class="modal__label" for="textarea-id">Текст письма:</label>
-            <textarea class="modal__textarea" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
+          <div class="modal__text-wrapper">
+            <label class="modal__label" for="email-id">Ваш e-mail:</label>
+            <input class="modal__text" type="email" name="email" id="email-id" placeholder="email@example.com">
           </div>
-          <button class="button button--form" type="submit">Отправить</button>
-        </form>
+        </div>
+
+        <div class="modal__text-wrapper modal__letter">
+          <label class="modal__label" for="textarea-id">Текст письма:</label>
+          <textarea class="modal__textarea" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button--form" type="submit">Отправить</button>
+      </form>
     </div>
 
     <script src="js/app.min.js"></script>

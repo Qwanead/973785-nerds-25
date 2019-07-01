@@ -23,11 +23,35 @@
   align-self: flex-start;
 }
 
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}
+
 .page-header__cart {
   position: relative;
 
   margin-top: 26px;
   padding-left: 40px;
+}
+
+
+.page-header__cart:hover,
+.page-header__cart:focus {
+  color: #fb565a;
+}
+
+.page-header__cart:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.page-header__cart:active::before {
+  opacity: 1;
 }
 
 .page-header__cart::before {

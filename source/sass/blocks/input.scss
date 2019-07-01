@@ -13,6 +13,13 @@
   line-height: 20px;
 }
 
+input:focus + .input__label {
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+}
+
 .input__label::before {
   position: absolute;
   top: 0;
@@ -26,6 +33,18 @@
   opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.input__label:hover::before {
+  opacity: 1;
+}
+
+input:disabled + .input__label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input:disabled + .input__label::before {
+  opacity: 0.1;
 }
 
 .input__label--radio::before {

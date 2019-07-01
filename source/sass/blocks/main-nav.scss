@@ -19,6 +19,16 @@
   padding-bottom: 3px;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: #fb565a;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
 .main-nav__item--current {
   border-bottom: 2px solid #fb565a;;
 }

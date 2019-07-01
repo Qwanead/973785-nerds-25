@@ -26,6 +26,15 @@
   opacity: 0.2;
 }
 
+.clients__item:hover,
+.clients__item:focus {
+  opacity: 1;
+}
+
+.clients__item:active {
+  opacity: 0.1;
+}
+
 .clients__item:last-child {
   margin-right: 0;
 }

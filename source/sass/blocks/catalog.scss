@@ -20,11 +20,21 @@
   margin-bottom: 33px;
 }
 
-.catalog__item:hover > .catalog__cap {
+.catalog__item:hover {
+  box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+}
+
+.catalog__item:focus {
+  outline: none;
+}
+
+.catalog__item:hover > .catalog__cap,
+.catalog__item:focus-within > .catalog__cap {
   opacity: 1;
 }
 
-.catalog__item:hover > .catalog__card {
+.catalog__item:hover > .catalog__card,
+.catalog__item:focus-within > .catalog__card {
   display: block;
 }
 
@@ -73,6 +83,15 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  color: #fb565a;
+}
+
+.catalog__link:active {
+  color: rgba(0, 1, 1, 0.3);
 }
 
 .catalog__description {

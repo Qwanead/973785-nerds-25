@@ -42,8 +42,26 @@
   background-color: #00ca74;
 }
 
+.button--apps:hover,
+.button--apps:focus {
+  background-color: #00bc6c;;
+}
+
+.button--apps:active {
+  background-color: #00aa62;
+}
+
 .button--presentation {
   background-color: #efc84a;
+}
+
+.button--presentation:hover,
+.button--presentation:focus {
+  background-color: #eab534;
+}
+
+.button--presentation:active {
+  background-color: #e5a722;
 }
 
 .button--contacts {
@@ -55,4 +73,17 @@
 
   color: #000000;
   background-color: #eeeeee;
+}
+
+.button--form:hover,
+.button--form:focus {
+  outline: none;
+  background-color: #dfdfdf;
+}
+
+.button--form:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }

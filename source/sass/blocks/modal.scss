@@ -34,6 +34,16 @@
   font-size: 0;
 }
 
+.modal__close:hover,
+.modal__close:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.modal__close:active {
+  opacity: 0.1;
+}
+
 .modal__header {
   margin: 0;
 
@@ -62,8 +72,22 @@
   border: 2px solid #d7dcde;
 }
 
+.modal__text:hover,
+.modal__textarea:hover {
+  border-color: #b4b9bb;
+}
+
 .modal__letter {
   margin-top: 34px;
+}
+
+.modal__text:focus,
+.modal__textarea:focus,
+.modal__text:active,
+.modal__textarea:active {
+  color: #000000;
+  border-color: #000000;
+  outline: none;
 }
 
 .modal__textarea {
@@ -93,10 +117,20 @@
 
 .modal__text::placeholder,
 .modal__textarea::placeholder {
-  opacity: 0.5;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.5);
 
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.modal__text:focus::placeholder,
+.modal__textarea:focus::placeholder {
+  color: #000000;
+}
+
+.modal__text--error,
+.modal__textarea--error {
+  color: #e74246;
+  border: 2px solid #e74246;
 }

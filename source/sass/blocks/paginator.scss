@@ -25,6 +25,17 @@
   line-height: 18px;
 }
 
+.paginator__item:hover,
+.paginator__item:focus {
+  background-color: #dfdfdf;
+}
+
+.paginator__item:active {
+  color: rgba(0, 1, 1, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
 .paginator__item--current {
   outline: 3px solid #dbdbdb;
   outline-offset: -3px;
