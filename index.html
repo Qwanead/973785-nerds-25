@@ -9,10 +9,12 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
+        <a class="page-header__logo">
+          <img src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
+        </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Студия</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="./catalog.html">Магазин</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
@@ -70,21 +72,21 @@
           <h2 class="visually-hidden">Продукты</h2>
           <ul class="products__list">
             <li class="products__item">
-              <img src="./img/illustration-1.png" alt="Веб-сайты">
+              <img src="./img/illustration-1.png" alt="Веб-сайты" width="300" height="146">
               <h3 class="products__title">Веб-сайты</h3>
               <p class="products__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a href="" class="button button--products">Заказать</a>
             </li>
 
             <li class="products__item">
-              <img src="./img/illustration-2.png" alt="Приложения">
+              <img src="./img/illustration-2.png" alt="Приложения" width="300" height="146">
               <h3 class="products__title">Приложения</h3>
               <p class="products__description">Покорите топ-10 приложений в AppStore и Google Play</p>
               <a href="" class="button button--products button--apps">Заказать</a>
             </li>
 
             <li class="products__item">
-              <img src="./img/illustration-3.png" alt="Презентации">
+              <img src="./img/illustration-3.png" alt="Презентации" width="300" height="146">
               <h3 class="products__title">Презентации</h3>
               <p class="products__description">Вы даже не подозреваете,
                   насколько вы изумительны!</p>
@@ -117,10 +119,10 @@
                 <td class="stats__percent">50<sup>%</sup></td>
               </tr>
               <tr>
-                  <td class="stats__value">Уровень самоотдачи</td>
-                  <td class="stats__value">Соблюдение сроков</td>
-                  <td class="stats__value">Минимальная предоплата</td>
-                </tr>
+                <td class="stats__value">Уровень самоотдачи</td>
+                <td class="stats__value">Соблюдение сроков</td>
+                <td class="stats__value">Минимальная предоплата</td>
+              </tr>
             </table>
           </div>
         </section>
@@ -158,11 +160,9 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__block">
           <h3 class="contacts__header">NЁRDS DESIGN STUDIO</h3>
-          <address class="contacts__address">191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </address>
+          <address class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-          <a href="#" class="button button--contacts">Напишите нам</a>
+          <a href="./writeus.html" class="button button--contacts">Напишите нам</a>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__map-google contacts__map-google--no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3026917786391!2d30.322158658404696!3d59.938689995469055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjMiTiAzMMKwMTknMjMuNyJF!5e0!3m2!1sru!2sru!4v1562015705864!5m2!1sru!2sru" width="1200" height="416" allowfullscreen></iframe>
