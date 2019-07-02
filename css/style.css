@@ -371,13 +371,17 @@ input[type="radio"].visually-hidden {
 
 .page-header__logo {
   -ms-flex-item-align: start;
-      align-self: flex-start; }
+      align-self: flex-start;
+  width: 160px;
+  height: 65px;
+  margin: 0;
+  padding: 0; }
 
-.page-header__logo:hover,
-.page-header__logo:focus {
+.page-header__logo[href]:hover,
+.page-header__logo[href]:focus {
   opacity: 0.8; }
 
-.page-header__logo:active {
+.page-header__logo[href]:active {
   opacity: 0.3; }
 
 .page-header__cart {
@@ -426,11 +430,11 @@ input[type="radio"].visually-hidden {
   margin-right: 46px;
   padding-bottom: 3px; }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
+.main-nav__link[href]:hover,
+.main-nav__link[href]:focus {
   color: #fb565a; }
 
-.main-nav__link:active {
+.main-nav__link[href]:active {
   opacity: 0.3;
   color: #000000; }
 
@@ -902,6 +906,9 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   line-height: 18px; }
 
+.contacts__address {
+  width: 214px; }
+
 .contacts__tel {
   margin-bottom: 37px; }
 
@@ -1254,8 +1261,9 @@ input[type="radio"].visually-hidden {
   background: #d7dcde; }
 
 .range-filter__bar {
-  width: 70%;
+  width: 122px;
   height: 2px;
+  margin-left: 18px;
   background: #00ca74; }
 
 .range-filter__toggle {
@@ -1273,10 +1281,10 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 2px 1px 0 #cfcfcf; }
 
 .range-filter__toggle--min {
-  left: 50px; }
+  left: 18px; }
 
 .range-filter__toggle--max {
-  left: 110px; }
+  left: 160px; }
 
 .range-filter__price-controls {
   font-size: 0; }
@@ -1365,6 +1373,9 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #eeeeee; }
 
+.catalog__card--sedona {
+  padding: 8px 76px 43px; }
+
 .catalog__header {
   margin-bottom: 14px;
   text-transform: uppercase;
@@ -1419,11 +1430,16 @@ input[type="radio"].visually-hidden {
 .input__label {
   line-height: 20px; }
 
-input:focus + .input__label {
+.input__radio:focus + .input__label,
+.input__checkbox:focus + .input__label {
   outline-width: 5px;
   outline-style: auto;
   outline-color: #4d90fe;
   outline-offset: -2px; }
+
+.input__radio:focus + .input__label::before,
+.input__checkbox:focus + .input__label::before {
+  opacity: 1; }
 
 .input__label::before {
   position: absolute;
@@ -1439,10 +1455,12 @@ input:focus + .input__label {
 .input__label:hover::before {
   opacity: 1; }
 
-input:disabled + .input__label {
+.input__radio:disabled + .input__label,
+.input__checkbox:disabled + .input__label {
   color: rgba(0, 0, 0, 0.3); }
 
-input:disabled + .input__label::before {
+.input__radio:disabled + .input__label::before,
+.input__checkbox:disabled + .input__label::before {
   opacity: 0.1; }
 
 .input__label--radio::before {
@@ -1452,9 +1470,12 @@ input:disabled + .input__label::before {
   background-image: url("../img/radio-on.svg"); }
 
 .input__label--checkbox::before {
+  width: 23px;
+  height: 23px;
   background-image: url("../img/checkbox-off.svg"); }
 
 .input__checkbox:checked + .input__label--checkbox::before {
+  width: 27px;
   background-image: url("../img/checkbox-on.svg"); }
 
 .input__list {

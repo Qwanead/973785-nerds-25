@@ -9,12 +9,14 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
+        <a class="page-header__logo" href="./index.html">
+          <img src="./img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
+        </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="./catalog.html">Магазин</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Магазин</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -33,9 +35,7 @@
             <div class="range-filter__wrapper">
               <div class="range-filter__controls">
                 <div class="range-filter__scale">
-                  <div class="range-filter__bar" style="margin-left: 20%;
-                                                        width: 30%;">
-                  </div>
+                  <div class="range-filter__bar"></div>
                 </div>
                 <div class="range-filter__toggle range-filter__toggle--min"></div>
                 <div class="range-filter__toggle range-filter__toggle--max"></div>
@@ -117,9 +117,9 @@
               <li class="catalog__item" tabindex="0" aria-label="Карточка товара Sedona">
                 <div class="catalog__cap"></div>
                 <img class="catalog__image" src="./img/img-sedona.jpg" alt="Седона" width="360" height="576">
-                <div class="catalog__card">
+                <div class="catalog__card catalog__card--sedona">
                   <h3 class="catalog__header"><a class="catalog__link" href="#">Sedona</a></h3>
-                  <p class="catalog__description">Информационный сайт<br> для туристов</p>
+                  <p class="catalog__description">Информационный сайт для туристов</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -194,11 +194,9 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__block">
           <h3 class="contacts__header">NЁRDS DESIGN STUDIO</h3>
-          <address class="contacts__address">191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </address>
+          <address class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-          <a href="#" class="button button--contacts">Напишите нам</a>
+          <a href="./writeus.html" class="button button--contacts">Напишите нам</a>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__map-google contacts__map-google--no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3026917786391!2d30.322158658404696!3d59.938689995469055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjMiTiAzMMKwMTknMjMuNyJF!5e0!3m2!1sru!2sru!4v1562015705864!5m2!1sru!2sru" width="100" height="416" allowfullscreen></iframe>
@@ -220,7 +218,7 @@
               </a>
             </li>
             <li class="social__item">
-               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <img class="social__icon social__icon--insta" src="./img/insta-icon.svg" alt="Мы в Инстаграме" width="21" height="21">
               </a>
             </li>
